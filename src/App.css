@@ -95,7 +95,6 @@
   justify-content: flex-start;
   padding-left: 10px;
   color:#fff;
-
 }
 
 .task-box .time-task {
@@ -153,4 +152,26 @@
 
 .late {
   background-color: rgb(116, 14, 0);
+}
+
+
+@media (max-width: 900px) {
+  .tasks-container {
+    width: 80%;
+  }
+
+  .box-add-tasks {
+    display: flex;
+    flex-wrap: wrap;
+  
+    gap: 10px;
+  }
+
+  .task-box .name-task {
+    width: 35%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
 }

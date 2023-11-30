@@ -9,7 +9,7 @@
 
 .tasks-container {
   margin-top: 100px;
-  width: 500px;
+  width: 620px;
   padding: 20px;
   background-color: #2b2a2a;
   border-radius: 10px;
@@ -49,6 +49,8 @@
 }
 
 .btn-action {
+  display: grid;
+  place-items: center;
   background-color: #1f1e1e;
   color: #fff;
   border: none;
@@ -58,6 +60,12 @@
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
+  
+}
+
+.btn-action svg {
+  width: 100%;
+  height: 100%;
 }
 
 .container-tasks {
@@ -102,6 +110,47 @@
 .btn-tasks {
   height: 100%;
   width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btns {
+  border: none;
+  background-color: #2b2a2a;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
   display: grid;
   place-items: center;
+  cursor: pointer;
+  transition: all .5s;
+
+  &:hover {
+    transition: all .2s;
+    background-color: #fff;
+    
+  }
+
+  &:hover svg {
+    color: #2b2a2a;
+  }
+}
+
+.btns svg{
+  color: #fff;
+}
+
+.btns-container {
+  display: flex;
+  gap: 10px;
+}
+
+.completed {
+  background-color: rgb(0, 116, 0) !important;
+}
+
+.late {
+  background-color: rgb(116, 14, 0);
 }

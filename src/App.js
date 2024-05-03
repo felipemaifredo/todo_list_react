@@ -13,7 +13,7 @@ function App() {
     taskTimeStart: '',
     taskTimeEnd: '',
     taskID: '',
-    completed: false, // Certifique-se de que esta propriedade está presente
+    completed: false,
   });
 
   useEffect(() => {
